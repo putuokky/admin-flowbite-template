@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 // use App\DataTables\UsersDataTable;
 
-use App\DataTables\UsersDataTable;
+// use App\DataTables\UsersDataTable;
 use Yajra\DataTables\Facades\Datatables;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ class UsersController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(UsersDataTable $dataTable)
+    public function index()
     {
         return view('users.index', [
             'title' => 'Users',
@@ -46,7 +46,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        // 
+        return ("masuk ke create users");
     }
 
     /**

@@ -1,4 +1,7 @@
 <x-app-layout>
+
+    @section('title', 'Dashboard')
+
     {{-- <x-header>
         <x-slot:title>Dashboard<x-slot:title>
     </x-header> --}}

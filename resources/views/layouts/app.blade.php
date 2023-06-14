@@ -7,10 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ env('APP_NAME') }}</title>
+    <title>@yield('title') &mdash; {{ env('APP_NAME') }}</title>
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @yield('styles')
 </head>
 
 <body>
@@ -21,7 +23,9 @@
             {{ $slot }}
             <x-footer />
         </main>
-    </div>
+        </div>
+        
+    @stack('scripts')
 </body>
 
 </html>

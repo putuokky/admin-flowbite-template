@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-// use App\DataTables\UsersDataTable;
-
-// use App\DataTables\UsersDataTable;
 use Yajra\DataTables\Facades\Datatables;
 use App\Models\User;
 use Illuminate\Http\Request;

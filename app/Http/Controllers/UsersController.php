@@ -43,8 +43,9 @@ class UsersController extends Controller
      */
     public function create()
     {
-        // 
-        return ("masuk ke create users");
+        return view('users.add', [
+            'title' => 'Users',
+        ]);
     }
 
     /**
